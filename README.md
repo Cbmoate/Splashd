@@ -15,9 +15,9 @@ firebase
 http://my.herokuapp.com/
 
 ### API's Used
-- API one - Google maps and places API
-- API two - Flicker API
-- API three  - Yelp
+- API one - Google maps and places API: http://jsfiddle.net/salman/4mtyu/
+- API two - Flicker API:  http://www.programmableweb.com/api/flickr
+- API three  - Yelp API:  http://www.programmableweb.com/api/yelp
 
 ### Trello Link
 https://trello.com/frontendkillaz
