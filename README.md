@@ -16,8 +16,8 @@ http://my.herokuapp.com/
 
 ### API's Used
 - API one - Google maps and places API: http://jsfiddle.net/salman/4mtyu/
-- API two - Flicker API:  http://www.programmableweb.com/api/flickr
-- API three  - Yelp API:  http://www.programmableweb.com/api/yelp
+- API two - Flickr API:  http://www.programmableweb.com/api/flickr
+- API three  - Wikimapia API:  http://wikimapia.org/api
 
 ### Trello Link
 https://trello.com/frontendkillaz
