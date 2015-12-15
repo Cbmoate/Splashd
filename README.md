@@ -2,7 +2,7 @@
 
 ### General Project Summary
 
-User will be able to find public bathrooms based on geo locations. The site will be using restaurants, coffee shops and others as searchable locations to display a list of the closest bathrooms. 
+User will be able to find publicly available bathrooms based on geo-locations. The site will be using restaurants, coffee shops and others as searchable locations to display a list of the closest bathrooms.  We also plan on allowing forms for users to to submit ratings/comments on various bathrooms 
 
 ### Technologies Used
 css
