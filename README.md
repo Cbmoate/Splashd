@@ -10,6 +10,7 @@ bootstrap
 jquery
 javascript
 firebase
+grayscale template
 
 ### Deployed Link
 http://my.herokuapp.com/
