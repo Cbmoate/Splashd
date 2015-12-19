@@ -4,7 +4,7 @@ function initMap() {
   var myLatLng = {lat: 40.525751, lng: -74.438212};
 
 
-  var map = new google.maps.Map(document.getElementById('map'), {
+  var map = new google.maps.Map(document.getElementById("resultMap"), {
     zoom: 15,
     center: myLatLng
   });
@@ -12,7 +12,7 @@ function initMap() {
   var marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
-    title: 'Hello World!'
+    title: "Google Map Results"
   });
 }
 
