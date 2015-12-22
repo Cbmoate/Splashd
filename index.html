@@ -40,23 +40,23 @@
             <h1 class="brand-heading">Splsh'd</h1>
             <div class="row">
               <div class="col-md-12">
-                <div class="input-group">
-                  <span class="input-group-btn">
-                    <button class="btn btn-warning" type="button">Go!</button>
-                  </span>
-                  <input type="text" class="form-control" placeholder="Got to go? Find Here!">
-                </div><!-- /input-group -->
+                <div class="form-inline">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="userAddress" placeholder="I can wait till later" />
+                  </div>
+                  <button type="submit" class="btn btn-warning">Relief Later</button>
+                  <a href="#resultMap" class="btn btn-danger page-scroll">Relief Now</a>
+                </div>
               </div><!-- /.col-lg-6 -->
             </div><!-- /.row -->
             <p class="intro-text">A free, responsive, Site Designed to Help you.<br>Relieve Yourself</p>
-            <a href="#about" class="btn btn-circle page-scroll">
-              <i class="fa fa-angle-double-down animated"></i>
             </a>
           </div>
         </div>
       </div>
     </div>
   </header>
+
   <div class="container col-md-6" id="resultMap">
   </div>
 
@@ -93,6 +93,8 @@
   <script type="text/javascript" src="js/map.js"></script>
     <!-- Custom Theme JavaScript -->
   <script src="js/grayscale.js"></script>
+    <!-- Geolocation Javascript -->
+  <script type="text/javascript" src="js/geolocate.js"></script>
     
 </body>
 </html>
