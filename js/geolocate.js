@@ -50,7 +50,7 @@ $(document).ready(function() {
           success: function(response) {
             var places = response.places;
             for (var i = 0; i < places.length; i++) {
-              console.log(places[0])
+              console.log(places[i])
             };
           }
         })
