@@ -20,7 +20,7 @@ function initMap() {
   })
 }
 
-
+// Current location function begins
 $(".btn-danger").on("click", function initMap() {
   var map = new google.maps.Map(document.getElementById("resultMap"), {
     center: {lat: -34.397, lng: 150.644},
@@ -54,6 +54,9 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
                         "Error: The Geolocation service failed." :
                         "Error: Your browser doesn\'t support geolocation.");
 }
+// Current location function ends
+
+
     // var myOptions = {
     //   zoom: 15,
     //   mapTypeId: google.maps.MapTypeId.ROADMAP
