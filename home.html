@@ -17,19 +17,20 @@
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
             <h1 class="brand-heading">Splsh'd</h1>
+            <p class="intro-text">Use the "Bathroom Now" button to find the closest bathrooms to your current location.<br/>Use the "I can hold it til later" button to enter an address and find bathrooms near there.</p>
             <div class="row">
               <div class="col-md-12">
                 <div class="form-inline">
+                  <a href="#resultMap" class="btn btn-danger page-scroll">Bathroom Now!</a>
+                  
+                  <button type="submit" class="btn btn-warning">I can hold it til later</button>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="userAddress" placeholder="I can wait till later" />
+                    <input type="text" class="form-control" id="userAddress" placeholder="Enter Address"/>
                   </div>
-                  <button type="submit" class="btn btn-warning">Relief Later</button>
-                  <a href="#resultMap" class="btn btn-danger page-scroll">Relief Now</a>
                 </div>
               </div><!-- /.col-lg-6 -->
             </div><!-- /.row -->
-            <p class="intro-text">A free, responsive, Site Designed to Help you.<br>Relieve Yourself</p>
-            </a>
+            
           </div>
         </div>
       </div>
@@ -37,7 +38,7 @@
   </header>
 
 <!--map-->
-  <div class="container col-md-6" id="resultMap">
+  <div class="container col-md-6, col-lg-offset-2" id="resultMap">
   </div>
 
 <!-- About Section -->
@@ -51,10 +52,10 @@
 <!-- Footer -->
   <footer>
     <div class="container text-center">
-      <p>Copyright &copy; Splsh'd 2015</p>
       <div id="backTopBtn">
         <a href="#page-top"><img src="http://www.thisisyoke.com/wp-content/themes/shaken-grid-free/images/backTopOff.png" width="200" height="200" alt="yoke back to top button"></a>
       </div>
+      <p>Copyright &copy; Splsh'd 2015</p>
     </div>
   </footer>
 
