@@ -56,13 +56,14 @@ $(document).ready(function() {
             var places = response.places;
             var placeName = $("<p>").append(places);
             for (var i = 0; i < places.length; i++) {
+              console.log(places[i].location.lat)
               $(".resultsRow").append(placeName)
                 .append(colDiv)
                 .append(thumbnailDiv)
                 .append(placeImg)
                 .append(placeTitleDiv)
                 .append(placeName);
-              console.log(places[i])
+             // console.log(places[i])
               return colDiv;
             };
           }
