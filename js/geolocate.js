@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $(".btn-warning").on("click", function(e) {
     e.preventDefault();
+    var newResultColumn;
     var userAddress = $("#userAddress").val();
     var googleApiUrl = "https://maps.googleapis.com/maps/api/geocode/json?";
     googleApiUrl += "key=AIzaSyA_Xc6XLbSKUd3en0i9HAfcwvQ7Tgw_Gs4";
@@ -47,10 +48,49 @@ $(document).ready(function() {
         $.ajax({
           type: "GET",
           url: mapiaApiUrl,
-          success: function(response) {
+          success: function (response) {
+            var colDiv = $("<div>").addClass("col-md-2");
+            var thumbnailDiv = $("<div>").addClass("thumbnail");
+            var placeImg = $("<img>").attr("src", "https://pbs.twimg.com/profile_images/661244915725287424/C7vPnSSE_400x400.jpg");
+            var placeTitleDiv = $("<div>").addClass("placeTitle");
             var places = response.places;
+            var placeName = $("<p>").append(places.id);
             for (var i = 0; i < places.length; i++) {
+              $(".resultsRow").append(placeName)
+                .append(colDiv)
+                .append(thumbnailDiv)
+                .append(placeImg)
+                .append(placeName);
               console.log(places[i])
+          
+
+
+  //var newResultColumn;
+
+  // function buildThumbnails(response) {
+    // var colDiv = $("<div>").addClass("col-md-3");
+    // var thumbnailDiv = $("<div>").addClass("thumbnail");
+    //var userImg = $("<img>").attr("src", "https://pbs.twimg.com/profile_images/661244915725287424/C7vPnSSE_400x400.jpg");
+    // var captionDiv = $("<div>").addClass("caption");
+    // var userH3 = $("<h3>").append(places.location.lon);
+    // var retweetP= $("<p>").append(userH3);
+
+  //   thumbnailDiv
+  //     .append(userImg)
+  //     .append(captionDiv
+  //       .append(userH3)
+  //       .append(retweetP)
+  //       // .append(", ")
+  //     );
+  //   colDiv.append(thumbnailDiv);
+
+  //   return colDiv;
+  // }
+
+  // for (var i = 0; i < window.twusers.length; i++) {
+  //   newResultColumn = buildThumbnails(window.twusers[i]);
+  //   $(".resultsRow").append(newResultColumn);
+  // }
             };
           }
         })
