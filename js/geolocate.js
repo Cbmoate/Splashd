@@ -54,43 +54,16 @@ $(document).ready(function() {
             var placeImg = $("<img>").attr("src", "https://pbs.twimg.com/profile_images/661244915725287424/C7vPnSSE_400x400.jpg");
             var placeTitleDiv = $("<div>").addClass("placeTitle");
             var places = response.places;
-            var placeName = $("<p>").append(places.id);
+            var placeName = $("<p>").append(places);
             for (var i = 0; i < places.length; i++) {
               $(".resultsRow").append(placeName)
                 .append(colDiv)
                 .append(thumbnailDiv)
                 .append(placeImg)
+                .append(placeTitleDiv)
                 .append(placeName);
               console.log(places[i])
-          
-
-
-  //var newResultColumn;
-
-  // function buildThumbnails(response) {
-    // var colDiv = $("<div>").addClass("col-md-3");
-    // var thumbnailDiv = $("<div>").addClass("thumbnail");
-    //var userImg = $("<img>").attr("src", "https://pbs.twimg.com/profile_images/661244915725287424/C7vPnSSE_400x400.jpg");
-    // var captionDiv = $("<div>").addClass("caption");
-    // var userH3 = $("<h3>").append(places.location.lon);
-    // var retweetP= $("<p>").append(userH3);
-
-  //   thumbnailDiv
-  //     .append(userImg)
-  //     .append(captionDiv
-  //       .append(userH3)
-  //       .append(retweetP)
-  //       // .append(", ")
-  //     );
-  //   colDiv.append(thumbnailDiv);
-
-  //   return colDiv;
-  // }
-
-  // for (var i = 0; i < window.twusers.length; i++) {
-  //   newResultColumn = buildThumbnails(window.twusers[i]);
-  //   $(".resultsRow").append(newResultColumn);
-  // }
+              return colDiv;
             };
           }
         })
