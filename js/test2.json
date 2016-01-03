@@ -1,0 +1,458 @@
+{  
+   "language":"en",
+   "found":"418",
+   "places":[  
+      {  
+         "id":17115224,
+         "language_id":0,
+         "language_iso":"en",
+         "urlhtml":"<a class=\"wikimapia-link\" href=\"http:\/\/wikimapia.org\/17115224\/Restaurant-Row\">Restaurant Row<\/a>",
+         "title":"Restaurant Row",
+         "tags":[  
+            {  
+               "id":74,
+               "title":"restaurant"
+            },
+            {  
+               "id":44605,
+               "title":"interesting place"
+            },
+            {  
+               "id":44629,
+               "title":"invisible"
+            },
+            {  
+               "id":45535,
+               "title":"town district"
+            }
+         ],
+         "location":{  
+            "lon":-73.9893928,
+            "lat":40.7603602,
+            "north":40.761183,
+            "south":40.7595374,
+            "east":-73.9879042,
+            "west":-73.9908814,
+            "country":"USA",
+            "state":"New Jersey",
+            "place":"West New York",
+            "country_adm_id":233041,
+            "gadm":[  
+               {  
+                  "id":"1000",
+                  "country":"0",
+                  "level":"0",
+                  "is_last_level":"0",
+                  "name":"World",
+                  "iso":null,
+                  "type":null,
+                  "translation":"World"
+               },
+               {  
+                  "id":"233",
+                  "country":"233",
+                  "level":"0",
+                  "is_last_level":"0",
+                  "name":"United States",
+                  "iso":null,
+                  "type":null,
+                  "translation":"United States"
+               },
+               {  
+                  "id":"231509",
+                  "country":"233",
+                  "level":"1",
+                  "is_last_level":"0",
+                  "name":"New York",
+                  "iso":null,
+                  "type":null,
+                  "translation":"New York"
+               }
+            ],
+            "city_id":"2463062",
+            "city":"New York City, New York",
+            "zoom":16
+         },
+         "polygon":[  
+            {  
+               "x":-73.9908814,
+               "y":40.7606122
+            },
+            {  
+               "x":-73.990463,
+               "y":40.761183
+            },
+            {  
+               "x":-73.9879042,
+               "y":40.7601002
+            },
+            {  
+               "x":-73.9883092,
+               "y":40.7595374
+            }
+         ]
+      },
+      {  
+         "id":16863,
+         "language_id":0,
+         "language_iso":"en",
+         "urlhtml":"<a class=\"wikimapia-link\" href=\"http:\/\/wikimapia.org\/16863\/The-Paramount-Building\">The Paramount Building<\/a>",
+         "title":"The Paramount Building",
+         "tags":[  
+            {  
+               "id":74,
+               "title":"restaurant"
+            },
+            {  
+               "id":108,
+               "title":"cafe"
+            },
+            {  
+               "id":1107,
+               "title":"place with historical importance"
+            },
+            {  
+               "id":8429,
+               "title":"deco"
+            },
+            {  
+               "id":45036,
+               "title":"language school"
+            }
+         ],
+         "location":{  
+            "lon":-73.98673,
+            "lat":40.7572192,
+            "north":40.7576022,
+            "south":40.7568363,
+            "east":-73.9862251,
+            "west":-73.9872349,
+            "housenumber":"1501",
+            "street_id":"184360",
+            "street":"Broadway",
+            "country":"USA",
+            "state":"New Jersey",
+            "place":"West New York",
+            "country_adm_id":233041,
+            "gadm":[  
+               {  
+                  "id":"1000",
+                  "country":"0",
+                  "level":"0",
+                  "is_last_level":"0",
+                  "name":"World",
+                  "iso":null,
+                  "type":null,
+                  "translation":"World"
+               },
+               {  
+                  "id":"233",
+                  "country":"233",
+                  "level":"0",
+                  "is_last_level":"0",
+                  "name":"United States",
+                  "iso":null,
+                  "type":null,
+                  "translation":"United States"
+               },
+               {  
+                  "id":"231509",
+                  "country":"233",
+                  "level":"1",
+                  "is_last_level":"0",
+                  "name":"New York",
+                  "iso":null,
+                  "type":null,
+                  "translation":"New York"
+               }
+            ],
+            "city_id":"2463062",
+            "city":"New York City, New York",
+            "zoom":17
+         },
+         "polygon":[  
+            {  
+               "x":-73.9868635,
+               "y":40.7576022
+            },
+            {  
+               "x":-73.9872349,
+               "y":40.7571075
+            },
+            {  
+               "x":-73.9865872,
+               "y":40.7568363
+            },
+            {  
+               "x":-73.9862251,
+               "y":40.7573361
+            }
+         ]
+      },
+      {  
+         "id":17073571,
+         "language_id":0,
+         "language_iso":"en",
+         "urlhtml":"<a class=\"wikimapia-link\" href=\"http:\/\/wikimapia.org\/17073571\/Regal-Cinemas-E-Walk\">Regal  Cinemas E-Walk<\/a>",
+         "title":"Regal  Cinemas E-Walk",
+         "tags":[  
+            {  
+               "id":17,
+               "title":"store \/ shop"
+            },
+            {  
+               "id":74,
+               "title":"restaurant"
+            },
+            {  
+               "id":613,
+               "title":"cinema"
+            }
+         ],
+         "location":{  
+            "lon":-73.9886089,
+            "lat":40.7571865,
+            "north":40.7576053,
+            "south":40.7567677,
+            "east":-73.9881053,
+            "west":-73.9891125,
+            "housenumber":"247",
+            "street_id":"225296",
+            "street":"West 42nd Street",
+            "country":"USA",
+            "state":"New Jersey",
+            "place":"West New York",
+            "country_adm_id":233041,
+            "gadm":[  
+               {  
+                  "id":"1000",
+                  "country":"0",
+                  "level":"0",
+                  "is_last_level":"0",
+                  "name":"World",
+                  "iso":null,
+                  "type":null,
+                  "translation":"World"
+               },
+               {  
+                  "id":"233",
+                  "country":"233",
+                  "level":"0",
+                  "is_last_level":"0",
+                  "name":"United States",
+                  "iso":null,
+                  "type":null,
+                  "translation":"United States"
+               },
+               {  
+                  "id":"231509",
+                  "country":"233",
+                  "level":"1",
+                  "is_last_level":"0",
+                  "name":"New York",
+                  "iso":null,
+                  "type":null,
+                  "translation":"New York"
+               }
+            ],
+            "city_id":"2463062",
+            "city":"New York City, New York",
+            "zoom":17
+         },
+         "polygon":[  
+            {  
+               "x":-73.9888175,
+               "y":40.757326
+            },
+            {  
+               "x":-73.9881053,
+               "y":40.7570304
+            },
+            {  
+               "x":-73.9883012,
+               "y":40.7567677
+            },
+            {  
+               "x":-73.9890576,
+               "y":40.7570892
+            },
+            {  
+               "x":-73.9890254,
+               "y":40.75714
+            },
+            {  
+               "x":-73.9891125,
+               "y":40.7571736
+            },
+            {  
+               "x":-73.9888054,
+               "y":40.7576053
+            },
+            {  
+               "x":-73.9886606,
+               "y":40.7575474
+            }
+         ]
+      },
+      {  
+         "id":26105123,
+         "language_id":0,
+         "language_iso":"en",
+         "urlhtml":"<a class=\"wikimapia-link\" href=\"http:\/\/wikimapia.org\/26105123\/Bowery-Savings-Bank-Building\">Bowery Savings Bank Building<\/a>",
+         "title":"Bowery Savings Bank Building",
+         "tags":[  
+            {  
+               "id":74,
+               "title":"restaurant"
+            },
+            {  
+               "id":3419,
+               "title":"function hall"
+            },
+            {  
+               "id":11208,
+               "title":"Romanesque architecture"
+            }
+         ],
+         "location":{  
+            "lon":-73.9770923,
+            "lat":40.7514225,
+            "north":40.7517303,
+            "south":40.7511147,
+            "east":-73.9766698,
+            "west":-73.9775147,
+            "housenumber":"110",
+            "street_id":"225349",
+            "street":"East 42nd Street",
+            "country":"USA",
+            "state":"New Jersey",
+            "place":"West New York",
+            "country_adm_id":0,
+            "city_id":"2463062",
+            "city":"New York City, New York",
+            "zoom":18
+         },
+         "polygon":[  
+            {  
+               "x":-73.9775147,
+               "y":40.7512579
+            },
+            {  
+               "x":-73.9771539,
+               "y":40.7517303
+            },
+            {  
+               "x":-73.9766698,
+               "y":40.7515353
+            },
+            {  
+               "x":-73.9767864,
+               "y":40.7513707
+            },
+            {  
+               "x":-73.9767422,
+               "y":40.7513504
+            },
+            {  
+               "x":-73.9768401,
+               "y":40.751202
+            },
+            {  
+               "x":-73.9770547,
+               "y":40.7512813
+            },
+            {  
+               "x":-73.97717,
+               "y":40.7511147
+            }
+         ]
+      },
+      {  
+         "id":13235512,
+         "language_id":0,
+         "language_iso":"en",
+         "urlhtml":"<a class=\"wikimapia-link\" href=\"http:\/\/wikimapia.org\/13235512\/Hotel-Travel-Inn\">Hotel Travel Inn<\/a>",
+         "title":"Hotel Travel Inn",
+         "tags":[  
+            {  
+               "id":50,
+               "title":"hotel"
+            },
+            {  
+               "id":74,
+               "title":"restaurant"
+            }
+         ],
+         "location":{  
+            "lon":-73.9959696,
+            "lat":40.7602992,
+            "north":40.7606101,
+            "south":40.7599884,
+            "east":-73.9956128,
+            "west":-73.9963263,
+            "housenumber":"515",
+            "street_id":"225296",
+            "street":"West 42nd Street",
+            "country":"USA",
+            "state":"New Jersey",
+            "place":"West New York",
+            "country_adm_id":233041,
+            "gadm":[  
+               {  
+                  "id":"1000",
+                  "country":"0",
+                  "level":"0",
+                  "is_last_level":"0",
+                  "name":"World",
+                  "iso":null,
+                  "type":null,
+                  "translation":"World"
+               },
+               {  
+                  "id":"233",
+                  "country":"233",
+                  "level":"0",
+                  "is_last_level":"0",
+                  "name":"United States",
+                  "iso":null,
+                  "type":null,
+                  "translation":"United States"
+               },
+               {  
+                  "id":"231509",
+                  "country":"233",
+                  "level":"1",
+                  "is_last_level":"0",
+                  "name":"New York",
+                  "iso":null,
+                  "type":null,
+                  "translation":"New York"
+               }
+            ],
+            "city_id":"2463062",
+            "city":"New York City, New York",
+            "zoom":18
+         },
+         "polygon":[  
+            {  
+               "x":-73.9959561,
+               "y":40.7606101
+            },
+            {  
+               "x":-73.9956128,
+               "y":40.7604719
+            },
+            {  
+               "x":-73.9959669,
+               "y":40.7599884
+            },
+            {  
+               "x":-73.9963263,
+               "y":40.7601347
+            }
+         ]
+      }
+   ],
+   "page":1,
+   "count":5
+}
