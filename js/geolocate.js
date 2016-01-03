@@ -59,7 +59,7 @@ $(document).ready(function() {
             
               function buildResults () {
               var resultsDiv = $("<div>").addClass("results");
-              var colDiv = $("<div>").addClass("col-md-2");
+              var colDiv = $("<div>").addClass("col-md-2").attr("href", "#reviews").attr("data-toggle", "modal");
               var placeTitleDiv = $("<div>").addClass("placeTitle");
               var placeNames = $("<h5>").append(places[i].title);
               var thumbnailDiv = $("<div>").addClass("col-md-2 thumbnail");
