@@ -1,0 +1,11 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#resultMap {
+  height: 70%;
+  width: 70%;
+}
+  

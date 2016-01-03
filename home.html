@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Splash'd</title>
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!--favicon CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!--Custom CSS -->
+  <link href="css/grayscale.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/map.css">
+</head>
+<body>
+<!-- Intro Header -->
+  <header class="intro">
+    <div class="intro-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h1 class="brand-heading">Splsh'd</h1>
+            <p class="intro-text">Use the "Bathroom Now" button to find the closest bathrooms to your current location.<br/>Use the "I can hold it til later" button to enter an address and find bathrooms near there.<span> <button type="button" class="btn btn-default" href="#reviews" data-toggle="modal">Write a Review</button></span></p>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-inline">
+                  <a href="#resultMap" class="btn btn-danger page-scroll">Bathroom Now!</a>
+                  <button type="submit" class="btn btn-warning">I can hold it til later</button>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="userAddress" placeholder="Enter Address"/>
+                  </div>
+                </div>
+              </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!--Search results by address-->
+  <div class="container">
+    <div class="resultsRow">
+    </div>
+  </div>
+<!--map-->
+  <div class="container col-md-6, col-lg-offset-2" id="resultMap">
+  </div>
+
+<!--Reviews Modal Form-->
+  <aside class="modal fade" id="reviews" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>Write a Review</h4>
+        </div>
+        <div class="modal-body">
+          <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+            <div class="row" align="center">
+              <textarea id="review-message" class="input" name="message" rows="4" cols="45" placeholder="Write Your Comments Here"></textarea><br />
+              <input id="submit_button" type="submit" value="Send review info" align="center"/>
+              <span class="inline">
+                Rating: 
+                <i id="one-star-o" class="fa fa-star-o"></i><i id="two-stars-o" class="fa fa-star-o"></i><i id="three-stars-o" class="fa fa-star-o"></i><i id="four-stars-o" class="fa fa-star-o"></i><i id="five-stars-o" class="fa fa-star-o"></i>
+              </span>
+            </div>
+          </form> 
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-default" data-dismiss="modal">Close</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+<!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <div id="backTopBtn">
+        <a href="#page-top"><img src="http://www.thisisyoke.com/wp-content/themes/shaken-grid-free/images/backTopOff.png" width="200" height="200" alt="yoke back to top button"></a>
+      </div>
+      <p>Copyright &copy; Splsh'd 2015</p>
+    </div>
+  </footer>
+
+  <!--jquery-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt6kwOW8tUgnV3OY_chukrmCvJM7W-GWI&signed_in=true&callback=initMap"></script>
+  <!-- Maps JavaScript -->
+  <script type="text/javascript" src="js/map.js"></script>
+  <!-- Geolocation Javascript -->
+  <script type="text/javascript" src="js/geolocate.js"></script>
+  <!--Firebase -->
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+</body>
+</html>
