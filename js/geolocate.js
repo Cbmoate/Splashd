@@ -49,24 +49,38 @@ $(document).ready(function() {
           type: "GET",
           url: mapiaApiUrl,
           success: function (response) {
-            var colDiv = $("<div>").addClass("col-md-2");
-            var thumbnailDiv = $("<div>").addClass("thumbnail");
-            var placeImg = $("<img>").attr("src", "https://pbs.twimg.com/profile_images/661244915725287424/C7vPnSSE_400x400.jpg");
-            var placeTitleDiv = $("<div>").addClass("placeTitle");
             var places = response.places;
-            var placeName = $("<p>").append(places);
+            var placesLat = places[0].location.lat;
+            var placesLon = places[0].location.lon;
+            var placeName = places[0].title;
             for (var i = 0; i < places.length; i++) {
-              console.log(places[i].location.lat)
-              $(".resultsRow").append(placeName)
-                .append(colDiv)
-                .append(thumbnailDiv)
-                .append(placeImg)
-                .append(placeTitleDiv)
-                .append(placeName);
-             // console.log(places[i])
-              return colDiv;
+              console.log(placesLat)
+              console.log(placesLon)
+            
+              function buildResults () {
+              var resultsDiv = $("<div>").addClass("results");
+              var colDiv = $("<div>").addClass("col-md-2");
+              var placeTitleDiv = $("<div>").addClass("placeTitle");
+              var placeNames = $("<h5>").append(places[i].title);
+              var thumbnailDiv = $("<div>").addClass("col-md-2 thumbnail");
+              var placeImg = $("<img>").attr("src", "https://pbs.twimg.com/profile_images/661244915725287424/C7vPnSSE_400x400.jpg");
+              
+              resultsDiv
+                .append(thumbnailDiv
+                  .append(placeImg))
+                .append(placeTitleDiv
+                  .append(placeNames));
+
+                colDiv.append(resultsDiv);
+                return colDiv;         
+              }
+
+              newResultColumn = buildResults(places.length[i]);
+              $(".resultsRow").append(newResultColumn);
+             // // console.log(places[i])
             };
           }
+
         })
       }
     });
