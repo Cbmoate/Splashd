@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
   <title>Splash'd</title>
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -41,7 +40,6 @@
       </div>
     </div>
   </header>
-
 <!--Search results by address-->
   <div class="container col-md-10 col-md-offset-2">
     <div class="resultsRow">
@@ -50,7 +48,6 @@
 <!--map-->
   <div class="container col-md-6, col-lg-offset-2" id="resultMap">
   </div>
-
 <!--Reviews Modal Form-->
   <aside class="modal fade" id="reviews" role="dialog">
     <div class="modal-dialog">
@@ -59,14 +56,19 @@
           <h4>Write on the Wall</h4>
         </div>
         <div class="modal-body">
-          <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+          <form id="contact_form" enctype="multipart/form-data">
             <div class="row" align="center">
-              <textarea id="review-message" class="wallComment" name="message" rows="4" cols="45" placeholder="Write Your Comments Here"></textarea><br />
-              <button class="btn btn-primary"> Submit Review</button>
-              <span class="inline">
-                Rating: 
-                <i id="one-star-o" class="fa fa-star-o"></i><i id="two-stars-o" class="fa fa-star-o"></i><i id="three-stars-o" class="fa fa-star-o"></i><i id="four-stars-o" class="fa fa-star-o"></i><i id="five-stars-o" class="fa fa-star-o"></i>
-              </span>
+              <div class="col-md-6">
+                <textarea id="review-message" class="wallComment" rows="4" cols="45" placeholder="Write Your Comments Here"></textarea><br />
+                <button class="btn btn-primary">Submit Review</button>
+                <span class="inline">
+                  Rating: 
+                  <i id="one-star-o" class="fa fa-star-o"></i><i id="two-stars-o" class="fa fa-star-o"></i><i id="three-stars-o" class="fa fa-star-o"></i><i id="four-stars-o" class="fa fa-star-o"></i><i id="five-stars-o" class="fa fa-star-o"></i>
+                </span>
+              </div>
+              <div class="col-md-6">
+              <ul id="base-messages"></ul>
+              </div>
             </div>
           </form> 
         </div>
@@ -76,7 +78,6 @@
       </div>
     </div>
   </aside>
-
 <!-- Footer -->
   <footer>
     <div class="container text-center">
