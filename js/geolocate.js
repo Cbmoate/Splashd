@@ -6,6 +6,7 @@ $(document).ready(function() {
     var googleApiUrl = "https://maps.googleapis.com/maps/api/geocode/json?";
     googleApiUrl += "key=AIzaSyA_Xc6XLbSKUd3en0i9HAfcwvQ7Tgw_Gs4";
     googleApiUrl += "&address=" + userAddress;
+    $(".resultsRow").empty();
 
     $.ajax({
       type: "GET",
