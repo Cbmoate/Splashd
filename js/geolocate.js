@@ -45,6 +45,7 @@ $(document).ready(function() {
         mapiaApiUrl += "&count=5";
         mapiaApiUrl += "&category=74";
         console.log(mapiaApiUrl)
+
         $.ajax({
           type: "GET",
           url: mapiaApiUrl,
@@ -64,7 +65,6 @@ $(document).ready(function() {
               var placeTitleDiv = $("<div>").addClass("placeTitle").attr("data-Lon", placeLon).attr("data-Lan", placeLat);
               var placeNames = $("<h5>").append(places[i].title);
               var thumbnailDiv = $("<div>").addClass("col-md-2 thumbnail");
-
               //var placeImg = $("<img>").attr("src", "https://pbs.twimg.com/profile_images/661244915725287424/C7vPnSSE_400x400.jpg");
 
               resultsDiv
@@ -80,14 +80,15 @@ $(document).ready(function() {
 
               newResultColumn = buildResults(places.length[i]);
               $(".resultsRow").append(newResultColumn);
+        
               //console.log(places[i])
               // console.log(placesLat)
               // console.log(placesLon)
-            };
-          }
+              };
+            }
+          })
+        }
+      })
+    });  
+  });
 
-        })
-      }
-    });
-  });  
-});
