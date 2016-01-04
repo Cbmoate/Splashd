@@ -146,6 +146,7 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
+    text-shadow: 1px 1px #000;
     color: #D7A217;
     background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
     background-color: #000;
@@ -179,7 +180,9 @@ a:focus {
     }
 
     .intro .intro-body .intro-text {
-        font-size: 26px;
+        font-size: 20px;
+        color: #00688B;
+
     }
 }
 
