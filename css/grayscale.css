@@ -148,7 +148,8 @@ a:focus {
     text-align: center;
     text-shadow: 1px 1px #000;
     color: #D7A217;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/intro-bg.png) no-repeat bottom center scroll;
+    background-attachment: fixed;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -181,7 +182,7 @@ a:focus {
 
     .intro .intro-body .intro-text {
         font-size: 20px;
-        color: #00688B;
+        color: #ffffff;
 
     }
 }

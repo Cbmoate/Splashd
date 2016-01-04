@@ -48,7 +48,6 @@
 <!--map-->
   <div class="container col-md-6, col-lg-offset-2" id="resultMap">
   </div>
-
 <!--Reviews Modal Form-->
   <aside class="modal fade" id="reviews" role="dialog">
     <div class="modal-dialog">
@@ -59,12 +58,17 @@
         <div class="modal-body">
           <form id="contact_form" enctype="multipart/form-data">
             <div class="row" align="center">
-              <textarea id="review-message" class="wallComment" rows="4" cols="45" placeholder="Write Your Comments Here"></textarea><br />
-              <button class="btn btn-primary"> Submit Review</button>
-              <span class="inline">
-                Rating: 
-                <i id="one-star-o" class="fa fa-star-o"></i><i id="two-stars-o" class="fa fa-star-o"></i><i id="three-stars-o" class="fa fa-star-o"></i><i id="four-stars-o" class="fa fa-star-o"></i><i id="five-stars-o" class="fa fa-star-o"></i>
-              </span>
+              <div class="col-md-6">
+                <textarea id="review-message" class="wallComment" rows="4" cols="45" placeholder="Write Your Comments Here"></textarea><br />
+                <button class="btn btn-primary">Submit Review</button>
+                <span class="inline">
+                  Rating: 
+                  <i id="one-star-o" class="fa fa-star-o"></i><i id="two-stars-o" class="fa fa-star-o"></i><i id="three-stars-o" class="fa fa-star-o"></i><i id="four-stars-o" class="fa fa-star-o"></i><i id="five-stars-o" class="fa fa-star-o"></i>
+                </span>
+              </div>
+              <div class="col-md-6">
+              <ul id="base-messages"></ul>
+              </div>
             </div>
           </form> 
         </div>
@@ -74,7 +78,6 @@
       </div>
     </div>
   </aside>
-
 <!-- Footer -->
   <footer>
     <div class="container text-center">
