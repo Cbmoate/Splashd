@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
   <title>Splash'd</title>
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -14,13 +16,13 @@
 </head>
 <body>
 <!-- Intro Header -->
-  <header class="intro">
+  <header class="intro" page-top>
     <div class="intro-body">
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
             <h1 class="brand-heading">Splsh'd</h1>
-            <p class="intro-text">Use the "Bathroom Now" button to find the closest bathrooms to your current location.<br/>Use the "I can hold it til later" button to enter an address and find bathrooms near there.<span> <button type="button" class="btn btn-default" href="#reviews" data-toggle="modal">Write a Review</button></span></p>
+            <p class="intro-text">Use the "Bathroom Now" button to find the closest bathrooms to your current location.<br/>Use the "I can hold it til later" button to enter an address and find bathrooms near there.</p>
             <div class="row">
               <div class="col-md-12">
                 <div class="form-inline">
@@ -57,8 +59,8 @@
         <div class="modal-body">
           <form id="contact_form" enctype="multipart/form-data">
             <div class="row" align="center">
-              <textarea id="review-message" class="input" name="message" rows="4" cols="45" placeholder="Write Your Comments Here"></textarea><br />
-              <input id="submit_button" type="submit" value="Send review info" align="center"/>
+              <textarea id="review-message" class="wallComment" name="message" rows="4" cols="45" placeholder="Write Your Comments Here"></textarea><br />
+              <button class="btn btn-primary"> Submit Review</button>
               <span class="inline">
                 Rating: 
                 <i id="one-star-o" class="fa fa-star-o"></i><i id="two-stars-o" class="fa fa-star-o"></i><i id="three-stars-o" class="fa fa-star-o"></i><i id="four-stars-o" class="fa fa-star-o"></i><i id="five-stars-o" class="fa fa-star-o"></i>
