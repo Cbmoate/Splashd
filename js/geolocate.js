@@ -78,6 +78,8 @@ $(document).ready(function() {
               newResultColumn = buildResults(places.length[i]);
               $(".resultsRow").append(newResultColumn);
              // // console.log(places[i])
+
+
             };
           }
 
