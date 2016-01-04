@@ -1,16 +1,19 @@
 
-var myDataRef = new Firebase('https://va3izfedini.firebaseio-demo.com/');
-var locationsRef = myDataRef.child('locations')
+var myDataRef = new Firebase("https://sizzling-torch-4957.firebaseio.com/");
+var commentMessage = $(".wallComment");
+var building = $();
 
 $(".btn btn-primary").on("click", function comments(){
-  .preventDefault();
-  var comment = $(".wallComment")
-  var location = $
-}
+  var comment = commentMessage.val();
+  var location = building.val();
 
-locationRef.set({
-  lon, lat:{
-    rating: "4"
-    comment: "This bathroom is pretty okay"
-  }
+  myDataRef.update({place: location, review: comment });
+  commentMessage.val('');
+});
+
+myDataRef.limitToLast(10).on('child_added', function(snapshot){
+
+  var data = snapshot.val();
+  var comment = data.review;
+
 });
