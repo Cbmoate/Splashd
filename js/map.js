@@ -1,12 +1,11 @@
 var initialLocation;
-// var rutgers = new google.maps.LatLng(40.525751, -74.438212);
+//var rutgers = new google.maps.LatLng(40.525751, -74.438212);
 // var newyork = new google.maps.LatLng(40.69847032728747, -73.9514422416687);
 // var browserSupportFlag =  new Boolean();
 // var myLatLng = {lat: 40.525751, lng: -74.438212};
 
 function initMap() {
   var myLatLng = {lat: 40.525751, lng: -74.438212};
-  var myWork = {lat: 40.854982, lng: -74.414214};
   var map = new google.maps.Map(document.getElementById("resultMap"), {
     zoom: 15,
     center: myLatLng
