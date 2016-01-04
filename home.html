@@ -24,8 +24,8 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-inline">
-                  <a href="#resultMap" class="btn btn-danger page-scroll">Bathroom Now!</a>
-                  <button type="submit" class="btn btn-warning">I can hold it til later</button>
+                  <a href="#resultMap" class="btn btn-danger page-scroll" id="showResults">Bathroom Now!</a>
+                  <button type="submit" class="btn btn-warning" id="showResults">I can hold it til later</button>
                   <div class="form-group">
                     <input type="text" class="form-control" id="userAddress" placeholder="Enter Address"/>
                   </div>
@@ -39,7 +39,7 @@
   </header>
 
 <!--Search results by address-->
-  <div class="container">
+  <div class="container col-md-10 col-md-offset-2">
     <div class="resultsRow">
     </div>
   </div>
@@ -52,7 +52,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h4>Write a Review</h4>
+          <h4>Write on the Wall</h4>
         </div>
         <div class="modal-body">
           <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
