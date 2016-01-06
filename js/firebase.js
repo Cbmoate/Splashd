@@ -3,7 +3,8 @@ var myDataRef = new Firebase("https://sizzling-torch-4957.firebaseio.com/");
 var commentMessage = $(".wallComment");
 var building = $();
 
-$(".btn btn-primary").on("click", function comments(){
+$(".btn btn-primary").on("click", function comments(e){
+  e.preventDefault();
   var comment = commentMessage.val();
   var location = building.val();
 
