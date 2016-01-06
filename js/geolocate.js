@@ -1,4 +1,12 @@
 $(document).ready(function() {
+    var navigationFn = {
+    goToSection: function(id) {
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+        }, 1500);
+      }
+    }
+
   $(".btn-warning").on("click", function(e) {
     e.preventDefault();
     var newResultColumn;
@@ -6,6 +14,7 @@ $(document).ready(function() {
     var googleApiUrl = "https://maps.googleapis.com/maps/api/geocode/json?";
     googleApiUrl += "key=AIzaSyA_Xc6XLbSKUd3en0i9HAfcwvQ7Tgw_Gs4";
     googleApiUrl += "&address=" + userAddress;
+    navigationFn.goToSection("#rSection");
     $(".resultsRow").empty();
 
     $.ajax({
@@ -34,18 +43,18 @@ $(document).ready(function() {
         var mapiaApiUrl = "http://api.wikimapia.org/?";
         mapiaApiUrl += "key=56865362-4D0D7AE0-2211572B-29D17814-86AB49B5-E63BC1B3-5442994D-3AE8CA0D";
         mapiaApiUrl += "&function=place.getbyarea";
-        mapiaApiUrl += "&coordsby=latlon"
+        mapiaApiUrl += "&coordsby=latlon";
         mapiaApiUrl += "&lon_min=" + long_min;
         mapiaApiUrl += "&lat_min=" + lat_min;
         mapiaApiUrl += "&lon_max=" + long_max;
         mapiaApiUrl += "&lat_max=" + lat_max;
         mapiaApiUrl += "&format=json";
-        mapiaApiUrl += "&pack="
+        mapiaApiUrl += "&pack=";
         mapiaApiUrl += "&language=en";
-        mapiaApiUrl += "&page=1"
+        mapiaApiUrl += "&page=1";
         mapiaApiUrl += "&count=5";
         mapiaApiUrl += "&category=74";
-        console.log(mapiaApiUrl)
+        console.log(mapiaApiUrl);
 
         $.ajax({
           type: "GET",
@@ -85,11 +94,11 @@ $(document).ready(function() {
               //console.log(places[i])
               // console.log(placesLat)
               // console.log(placesLon)
-              };
+              }
             }
-          })
-        }
-      })
+          });
+        } 
+      });
     });  
   });
 
