@@ -61,8 +61,6 @@ $(document).ready(function() {
           url: mapiaApiUrl,
           success: function (response) {
             var places = response.places;
-            //var placesLat = places[0].location.lat;
-            //var placesLon = places[0].location.lon;
             var placeName = places[0].title;
             for (var i = 0; i < places.length; i++) {
 
@@ -78,10 +76,8 @@ $(document).ready(function() {
               //var placeImg = $("<img>").attr("src", "https://pbs.twimg.com/profile_images/661244915725287424/C7vPnSSE_400x400.jpg");
 
               resultsDiv
-                //.append(thumbnailDiv)
-                  //.append(placeImg))
                 .append(placeTitleDiv
-                  .append(placeNames))
+                .append(placeNames))
                 .append;
 
                 colDiv.append(resultsDiv);
@@ -91,9 +87,6 @@ $(document).ready(function() {
               newResultColumn = buildResults(places.length[i]);
               $(".resultsRow").append(newResultColumn);
         
-              //console.log(places[i])
-              // console.log(placesLat)
-              // console.log(placesLon)
               }
             }
           });
