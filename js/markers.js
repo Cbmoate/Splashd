@@ -64,6 +64,28 @@ $.ajax({
             var places = response.places;
             var placeName = places[0].title;
             for (var i = 0; i < places.length; i++) {
+              function buildResults () {
+              var placeLon = places[i].location.lon;
+              var placeLat = places[i].location.lat;
+              var resultsDiv = $("<div>").addClass("results");
+              var colDiv = $("<div>").addClass("col-md-2").attr("href", "#reviews").attr("data-toggle", "modal");
+              var placeTitleDiv = $("<div>").addClass("placeTitle").attr("data-Lon", placeLon).attr("data-Lan", placeLat);
+              var placeNames = $("<h5>").append(places[i].title);
+              var thumbnailDiv = $("<div>").addClass("col-md-2 thumbnail");
+              //var placeImg = $("<img>").attr("src", "https://pbs.twimg.com/profile_images/661244915725287424/C7vPnSSE_400x400.jpg");
+
+              resultsDiv
+                .append(placeTitleDiv
+                .append(placeNames))
+                .append;
+
+                colDiv.append(resultsDiv);
+                return colDiv;         
+              }
+              newResultColumn = buildResults(places.length[i]);
+              $(".resultsRow").append(newResultColumn);
+        
+              }
 
              /* create map
              */
@@ -124,7 +146,6 @@ $.ajax({
           }
 
 
-}
 });
 }
 });
