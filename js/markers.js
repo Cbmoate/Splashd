@@ -8,15 +8,15 @@ var navigationFn = {
 
 var map;
 
-  $(".btn-warning").on("click", function(e) {
-    e.preventDefault();
-    var newResultColumn;
-    var userAddress = $("#userAddress").val();
-    var googleApiUrl = "https://maps.googleapis.com/maps/api/geocode/json?";
-    googleApiUrl += "key=AIzaSyA_Xc6XLbSKUd3en0i9HAfcwvQ7Tgw_Gs4";
-    googleApiUrl += "&address=" + userAddress;
-    navigationFn.goToSection("#rSection");
-    $(".resultsRow").empty();
+$(".btn-warning").on("click", function(e) {
+  e.preventDefault();
+  var newResultColumn;
+  var userAddress = $("#userAddress").val();
+  var googleApiUrl = "https://maps.googleapis.com/maps/api/geocode/json?";
+  googleApiUrl += "key=AIzaSyA_Xc6XLbSKUd3en0i9HAfcwvQ7Tgw_Gs4";
+  googleApiUrl += "&address=" + userAddress;
+  navigationFn.goToSection("#rSection");
+  $(".resultsRow").empty();
 
 $.ajax({
       type: "GET",
@@ -57,96 +57,88 @@ $.ajax({
         mapiaApiUrl += "&category=74";
 
 
-        $.ajax({
-          type: "GET",
-          url: mapiaApiUrl,
-          success: function (response) {
-            var places = response.places;
-            var placeName = places[0].title;
-            for (var i = 0; i < places.length; i++) {
-              function buildResults () {
-              var placeLon = places[i].location.lon;
-              var placeLat = places[i].location.lat;
-              var resultsDiv = $("<div>").addClass("results");
-              var colDiv = $("<div>").addClass("col-md-2").attr("href", "#reviews").attr("data-toggle", "modal");
-              var placeTitleDiv = $("<div>").addClass("placeTitle").attr("data-Lon", placeLon).attr("data-Lan", placeLat);
-              var placeNames = $("<h5>").append(places[i].title);
-              var thumbnailDiv = $("<div>").addClass("col-md-2 thumbnail");
-              //var placeImg = $("<img>").attr("src", "https://pbs.twimg.com/profile_images/661244915725287424/C7vPnSSE_400x400.jpg");
+      $.ajax({
+        type: "GET",
+        url: mapiaApiUrl,
+        success: function (response) {
+          var places = response.places;
+          var placeName = places[0].title;
+          for (var i = 0; i < places.length; i++) {
+            function buildResults () {
+            var placeLon = places[i].location.lon;
+            var placeLat = places[i].location.lat;
+            var resultsDiv = $("<div>").addClass("results");
+            var colDiv = $("<div>").addClass("col-md-2").attr("href", "#reviews").attr("data-toggle", "modal");
+            var placeTitleDiv = $("<div>").addClass("placeTitle").attr("data-Lon", placeLon).attr("data-Lan", placeLat);
+            var placeNames = $("<h5>").append(places[i].title);
+            var thumbnailDiv = $("<div>").addClass("col-md-2 thumbnail");
 
-              resultsDiv
-                .append(placeTitleDiv
-                .append(placeNames))
-                .append;
-
-                colDiv.append(resultsDiv);
-                return colDiv;         
-              }
-              newResultColumn = buildResults(places.length[i]);
+            resultsDiv
+              .append(placeTitleDiv
+              .append(placeNames))
+              .append;
+              colDiv.append(resultsDiv);
+              return colDiv;         
+            }
+            newResultColumn = buildResults(places.length[i]);
               $(".resultsRow").append(newResultColumn);
-        
-              }
-
-             /* create map
-             */
-            var map = new google.maps.Map(document.getElementById("resultMap"), {
-              center: new google.maps.LatLng(places[0].location.lat, places[0].location.lon),
-              zoom: 14,
-              mapTypeId: google.maps.MapTypeId.ROADMAP
-            });
-
-            /*
-             * create infowindow (which will be used by markers)
-             */
-            var infoWindow = new google.maps.InfoWindow();
-
-            /*
-             * marker creater function (acts as a closure for html parameter)
-             */
-            function createMarker(options, html) {
-              var marker = new google.maps.Marker(options);
-              if (html) {
-                google.maps.event.addListener(marker, "click", function () {
-                  infoWindow.setContent(html);
-                  infoWindow.open(options.map, this);
-                });
-              }
-              return marker;
+      
             }
 
-            /*
-             * add markers to map
-             */
-            var marker0 = createMarker({
-              position: new google.maps.LatLng(places[0].location.lat, places[0].location.lon),
-              map: map,
-              icon: "http://1.bp.blogspot.com/_GZzKwf6g1o8/S6xwK6CSghI/AAAAAAAAA98/_iA3r4Ehclk/s1600/marker-green.png"
-            }, "<h1>Marker 0</h1><p>This is the home marker.</p>");
+           //create map
+           
+          var map = new google.maps.Map(document.getElementById("resultMap"), {
+            center: new google.maps.LatLng(places[0].location.lat, places[0].location.lon),
+            zoom: 14,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          });
 
-            var marker1 = createMarker({
-              position: new google.maps.LatLng(places[1].location.lat, places[1].location.lon),
-              map: map
-            }, "<h1>Marker 1</h1><p>This is marker 1</p>");
+          //create infowindow (which will be used by markers)
+          
+          var infoWindow = new google.maps.InfoWindow();
 
-            var marker2 = createMarker({
-              position: new google.maps.LatLng(places[2].location.lat, places[2].location.lon),
-              map: map
-            }, "<h1>Marker 2</h1><p>This is marker 2</p>");
-
-            var marker3 = createMarker({
-              position: new google.maps.LatLng(places[3].location.lat, places[3].location.lon),
-              map: map
-            }, "<h1>Marker 3</h1><p>This is marker 3</p>");
-
-            var marker4 = createMarker({
-              position: new google.maps.LatLng(places[4].location.lat, places[4].location.lon),
-              map: map
-            }, "<h1>Marker 4</h1><p>This is marker 4</p>");
-
+          //marker creater function (acts as a closure for html parameter)
+          
+          function createMarker(options, html) {
+            var marker = new google.maps.Marker(options);
+              if (html) {
+              google.maps.event.addListener(marker, "click", function () {
+                infoWindow.setContent(html);
+                infoWindow.open(options.map, this);
+              });
+            }
+            return marker;
           }
 
+          //add markers to map
 
-});
-}
-});
+          var marker0 = createMarker({
+            position: new google.maps.LatLng(places[0].location.lat, places[0].location.lon),
+            map: map,
+            icon: "http://1.bp.blogspot.com/_GZzKwf6g1o8/S6xwK6CSghI/AAAAAAAAA98/_iA3r4Ehclk/s1600/marker-green.png"
+          }, "<h1>Marker 1</h1><p>This is marker 1</p>");
+
+          var marker1 = createMarker({
+            position: new google.maps.LatLng(places[1].location.lat, places[1].location.lon),
+            map: map
+          }, "<h1>Marker 1</h1><p>This is marker 1</p>");
+
+          var marker2 = createMarker({
+            position: new google.maps.LatLng(places[2].location.lat, places[2].location.lon),
+            map: map
+          }, "<h1>Marker 2</h1><p>This is marker 2</p>");
+
+          var marker3 = createMarker({
+            position: new google.maps.LatLng(places[3].location.lat, places[3].location.lon),
+            map: map
+          }, "<h1>Marker 3</h1><p>This is marker 3</p>");
+
+          var marker4 = createMarker({
+            position: new google.maps.LatLng(places[4].location.lat, places[4].location.lon),
+            map: map
+          }, "<h1>Marker 4</h1><p>This is marker 4</p>");
+        }
+      });
+    }
+  });
 });
