@@ -17,6 +17,8 @@ $(document).ready(function() {
     navigationFn.goToSection("#rSection");
     $(".resultsRow").empty();
 
+  
+
     $.ajax({
       type: "GET",
       url: googleApiUrl,
