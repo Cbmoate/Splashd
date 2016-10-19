@@ -1,4 +1,4 @@
-## Splash Project
+## Splash'd Project
 
 ### General Project Summary
 
