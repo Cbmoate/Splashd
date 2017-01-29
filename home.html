@@ -48,6 +48,7 @@
 <!--map-->
   <div class="container col-md-6, col-lg-offset-2" id="resultMap">
   </div>
+  <div class="container col-md-6, col-lg-offset-2" id="map_div"></div>
 <!--Reviews Modal Form-->
   <aside class="modal fade" id="reviews" role="dialog">
     <div class="modal-dialog">
@@ -123,11 +124,12 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt6kwOW8tUgnV3OY_chukrmCvJM7W-GWI&signed_in=true&callback=initMap"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script>
   <!-- Maps JavaScript -->
-  <script type="text/javascript" src="js/map.js"></script>
+   <script type="text/javascript" src="js/markers.js"></script>
+   <script type="text/javascript" src="js/map.js"></script>
   <!-- Geolocation Javascript -->
-  <script type="text/javascript" src="js/geolocate.js"></script>
+  
   <!--Firebase -->
   <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
   <!--Scrollto-->
